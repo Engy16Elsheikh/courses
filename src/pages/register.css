@@ -1,0 +1,18 @@
+/* Register reuses the shared styles in login.css (.auth-page, .auth-card, ...).
+   Only register-specific tweaks live here. */
+.auth-card.register-card {
+  max-width: 460px;
+}
+
+.name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .name-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
